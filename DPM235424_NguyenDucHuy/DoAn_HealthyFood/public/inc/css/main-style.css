@@ -1,0 +1,109 @@
+/* public/inc/css/main-style.css */
+
+:root {
+  --primary-green: #4caf50;
+  --dark-green: #2e7d32;
+  --light-green: #f1f8e9;
+  --price-red: #d32f2f;
+  --orange-calo: #ff9800;
+}
+
+/* Định nghĩa màu sắc chung */
+.text-green {
+  color: var(--primary-green) !important;
+}
+.bg-green {
+  background-color: var(--dark-green) !important;
+}
+.text-orange {
+  color: var(--orange-calo) !important;
+}
+
+/* Nút bấm kiểu Healthy */
+.btn-green {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: var(--dark-green);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+/* Card sản phẩm */
+.product-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: none !important;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-card img {
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Badge Calo */
+.calo-badge {
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Footer (Bottom) */
+footer h5 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #ffeb3b;
+}
+
+footer a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ffeb3b !important;
+  padding-left: 5px;
+}
+/* Đảm bảo trang web luôn chiếm hết chiều cao màn hình */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% chiều cao cửa sổ trình duyệt */
+  margin: 0;
+}
+
+/* Phần nội dung chính sẽ tự động dãn ra để đẩy Footer xuống */
+main,
+.main-content,
+#main-wrapper {
+  flex: 1;
+}
+
+/* Tùy chỉnh footer nếu cần */
+footer {
+  margin-top: auto; /* Đảm bảo footer luôn ở dưới */
+}
