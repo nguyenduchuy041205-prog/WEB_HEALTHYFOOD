@@ -14,6 +14,8 @@ Dự án được xây dựng toàn bộ từ khâu thiết kế cơ sở dữ l
 * **Dành cho Quản trị viên (Admin):**
   * Quản lý danh mục và thông tin sản phẩm (Thêm, sửa, xóa).
   * Theo dõi và quản lý trạng thái đơn hàng.
+<img width="1907" height="908" alt="image" src="https://github.com/user-attachments/assets/ebfc8561-4170-4db1-a961-a3a1472eba69" />
+<img width="1902" height="901" alt="image" src="https://github.com/user-attachments/assets/e8f5667f-94bc-4113-a798-4f31ca5e04df" />
 
 ## 💻 Công nghệ và Môi trường sử dụng
 * **Ngôn ngữ Back-end:** PHP 8.x
